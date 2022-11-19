@@ -1,0 +1,129 @@
+/* __________HEADER_________ */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  height: 80px;
+  border: 1px solid #eeeeee;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  gap: 50px;
+}
+
+.header-contact {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.header-mail {
+  display: flex;
+  align-items: center;
+}
+
+.header-tel {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  margin-right: 93px;
+}
+
+.header-logo-Studio {
+  color: #000000;
+}
+
+.header-list .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header-contact .link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header-list .current {
+  color: var(--accent-color);
+}
+
+.header-item {
+  position: relative;
+}
+
+.current::after {
+  content: "";
+  height: 4px;
+  width: 100%;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  position: absolute;
+  bottom: -32px;
+  left: 0px;
+}
+
+.header-mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  color: var(--second-title-text-color);
+  margin-right: 50px;
+}
+
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  color: var(--second-title-text-color);
+}
+
+.header-tel-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header-mail-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

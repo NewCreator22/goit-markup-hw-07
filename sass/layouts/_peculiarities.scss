@@ -1,0 +1,56 @@
+/* ----------Наші особливості------ */
+
+.peculiarities-list {
+  display: flex;
+  gap: 30px;
+}
+
+.peculiarities-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14x;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+
+.section-peculiarities p {
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--second-title-text-color);
+}
+
+.peculiarities-item-first {
+  width: 270px;
+  height: 98px;
+}
+
+.peculiarities-item-second {
+  width: 270px;
+  height: 74px;
+}
+
+.peculiarities-item-third {
+  width: 270px;
+  height: 74px;
+}
+
+.peculiarities-item-fourth {
+  width: 270px;
+  height: 98px;
+}
+
+.peculiarities-icon {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.icon-antenna {
+  height: 120px;
+  border-radius: 4px;
+}
