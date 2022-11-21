@@ -1,4 +1,4 @@
-.customers-title {
+.icons-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -8,17 +8,17 @@
   margin-bottom: 50px;
 }
 
-.customers-list {
+.icon-list {
   display: flex;
   gap: 30px;
 }
 
-.customers-item {
+.icon-list__item {
   width: calc((100% - 150px) / 6);
   height: 90px;
 }
 
-.customers-link {
+.icon-list__link {
   width: 100%;
   height: 100%;
   border: 1px solid currentColor;
@@ -36,6 +36,6 @@
   }
 }
 
-.customers-icon {
+.icon-list__icon {
   fill: currentColor;
 }

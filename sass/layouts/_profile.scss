@@ -1,26 +1,23 @@
-.profile-list {
-  display: flex;
-  gap: 30px;
-}
-
-.profile-title {
+.gallery-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-}
-
-.profile-title {
   margin-bottom: 50px;
 }
 
-.profile-item {
+.picture-list {
+  display: flex;
+  gap: 30px;
+}
+
+.picture-list__item {
   position: relative;
 }
 
-.profile-top-text {
+.picture-list__text {
   position: absolute;
   bottom: 0;
   font-weight: 700;

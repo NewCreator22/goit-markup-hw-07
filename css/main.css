@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --primary-text-color: #ffffff;
   --second-background-color: #2f303a;
@@ -17,6 +16,12 @@ h6 {
   margin: 0;
 }
 
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -32,12 +37,6 @@ button {
   cursor: pointer;
   bottom: none;
   border-radius: 4px;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding-left: 0;
 }
 
 body {
@@ -72,7 +71,7 @@ body {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -152,17 +151,16 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header-list .link:hover, .header-list .link:focus {
+  color: var(--accent-color);
+}
 
 .header-contact .link {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.header-list .link:hover,
-.header-list .link:focus,
-.header-contact .link:hover,
-.header-contact .link:focus {
+.header-contact .link:hover, .header-contact .link:focus {
   color: var(--accent-color);
 }
 
@@ -212,7 +210,6 @@ body {
   fill: currentColor;
 }
 
-/* ________________HIRO______________ */
 .section-hiro {
   background-color: var(--second-background-color);
   padding-top: 200px;
@@ -220,11 +217,7 @@ body {
 }
 
 .section-hiro {
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../img/hero-bg.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -248,7 +241,6 @@ body {
 
 .button-hiro {
   font-family: "Roboto";
-  cursor: pointer;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -268,9 +260,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button-hiro:hover,
-.button-hiro:focus {
+.button-hiro:hover, .button-hiro:focus {
   color: var(--title-text-color);
   background-color: #f5f4fa;
 }
@@ -299,8 +289,7 @@ body {
   width: 528px;
   height: 581px;
   background-color: var(--primary-text-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
   transform: translate(-50%, -50%) scaleY(1);
@@ -331,9 +320,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-close-icon:hover,
-.modal-close-icon:focus {
+.modal-close-icon:hover, .modal-close-icon:focus {
   fill: var(--accent-color);
 }
 
@@ -362,15 +349,8 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-input:hover,
-.modal-input:focus {
+.modal-input:hover, .modal-input:focus {
   border-color: var(--accent-color);
-}
-
-.modal-input:hover + .modal-input-icon,
-.modal-input:focus + .modal-input-icon {
-  fill: var(--accent-color);
 }
 
 .modal-input-icon {
@@ -380,6 +360,9 @@ body {
   transform: translateY(-50%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input:hover + .modal-input-icon, .modal-input:focus + .modal-input-icon {
+  fill: var(--accent-color);
 }
 
 .input-label {
@@ -415,9 +398,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-coment:hover,
-.modal-coment:focus {
+.modal-coment:hover, .modal-coment:focus {
   border-color: var(--accent-color);
 }
 
@@ -453,20 +434,18 @@ body {
   fill: transparent;
   margin-right: 7px;
 }
-
 .input-check:checked + .check-text span {
   background-color: var(--accent-color);
   border-color: transparent;
   fill: var(--primary-text-color);
 }
-
 .input-check:focus + .check-text span {
   border-color: var(--accent-color);
 }
 
 .polici-link {
   -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #2196f3;
 }
 
@@ -495,13 +474,13 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ----------Наші особливості------ */
-.peculiarities-list {
+/* ----------features------ */
+.card-list {
   display: flex;
   gap: 30px;
 }
 
-.peculiarities-title {
+.card-list__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14x;
@@ -511,33 +490,33 @@ body {
   margin-bottom: 10px;
 }
 
-.section-peculiarities p {
+.card-list__text {
   font-weight: 400;
   line-height: 1.71;
   color: var(--second-title-text-color);
 }
 
-.peculiarities-item-first {
+.card-list__item-first {
   width: 270px;
   height: 98px;
 }
 
-.peculiarities-item-second {
+.card-list__item-second {
   width: 270px;
   height: 74px;
 }
 
-.peculiarities-item-third {
+.card-list__item-third {
   width: 270px;
   height: 74px;
 }
 
-.peculiarities-item-fourth {
+.card-list__item-fourth {
   width: 270px;
   height: 98px;
 }
 
-.peculiarities-icon {
+.card-list__icon {
   background-color: #f5f4fa;
   border-radius: 4px;
   display: flex;
@@ -551,30 +530,26 @@ body {
   border-radius: 4px;
 }
 
-/* --------------Чим ми займаємося-------------- */
-.profile-list {
-  display: flex;
-  gap: 30px;
-}
-
-.profile-title {
+.gallery-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-}
-
-.profile-title {
   margin-bottom: 50px;
 }
 
-.profile-item {
+.picture-list {
+  display: flex;
+  gap: 30px;
+}
+
+.picture-list__item {
   position: relative;
 }
 
-.profile-top-text {
+.picture-list__text {
   position: absolute;
   bottom: 0;
   font-weight: 700;
@@ -590,7 +565,6 @@ body {
   justify-content: center;
 }
 
-/* -------------Наша команда------------ */
 .our-team-list {
   display: flex;
   gap: 30px;
@@ -612,8 +586,7 @@ body {
 
 .team-list {
   background: var(--primary-text-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -672,19 +645,16 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.team-soc-link:hover, .team-soc-link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+}
 
 .team-soc-icon {
   fill: currentColor;
 }
 
-.team-soc-link:hover,
-.team-soc-link:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-text-color);
-}
-
-/* ------------customers-------------- */
-.customers-title {
+.icons-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -694,17 +664,17 @@ body {
   margin-bottom: 50px;
 }
 
-.customers-list {
+.icon-list {
   display: flex;
   gap: 30px;
 }
 
-.customers-item {
+.icon-list__item {
   width: calc((100% - 150px) / 6);
   height: 90px;
 }
 
-.customers-link {
+.icon-list__link {
   width: 100%;
   height: 100%;
   border: 1px solid currentColor;
@@ -717,17 +687,14 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.customers-icon {
-  fill: currentColor;
-}
-
-.customers-link:hover,
-.customers-link:focus {
+.icon-list__link:hover, .icon-list__link:focus {
   color: var(--accent-color);
 }
 
-/* ------------Футер---------------- */
+.icon-list__icon {
+  fill: currentColor;
+}
+
 .footer {
   background-color: var(--second-background-color);
   padding-top: 60px;
@@ -779,9 +746,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-contact .link:hover,
-.footer-contact .link:focus {
+.footer-contact .link:hover, .footer-contact .link:focus {
   color: var(--accent-color);
 }
 
@@ -835,9 +800,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
+.footer-soc-link:hover, .footer-soc-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -906,7 +869,6 @@ body {
   display: flex;
 }
 
-/* ----------------Фыльтри-------------- */
 .filters-list {
   display: flex;
   justify-content: center;
@@ -916,7 +878,6 @@ body {
 
 .button-filters {
   font-family: "Roboto";
-  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -931,16 +892,12 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button-filters:hover,
-.button-filters:focus {
+.button-filters:hover, .button-filters:focus {
   color: var(--primary-text-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* ---------------Портфоліо------------- */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -951,6 +908,12 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+.portfolio-content:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-content:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
 
 .portfolio-link {
   display: block;
@@ -958,19 +921,8 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-link:hover,
-.portfolio-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio-content:nth-child(3n) {
-  margin-right: 0;
-}
-
-.portfolio-content:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+.portfolio-link:hover, .portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item {
@@ -1019,8 +971,6 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
 }
-
-.portfolio-link:hover .portfolio-top-text,
-.portfolio-link:focus .portfolio-top-text {
+.portfolio-link:hover .portfolio-top-text, .portfolio-link:focus .portfolio-top-text {
   transform: translateY(0);
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

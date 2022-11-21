@@ -1,11 +1,11 @@
-/* ----------Наші особливості------ */
+/* ----------features------ */
 
-.peculiarities-list {
+.card-list {
   display: flex;
   gap: 30px;
 }
 
-.peculiarities-title {
+.card-list__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14x;
@@ -15,33 +15,33 @@
   margin-bottom: 10px;
 }
 
-.section-peculiarities p {
+.card-list__text {
   font-weight: 400;
   line-height: 1.71;
   color: var(--second-title-text-color);
 }
 
-.peculiarities-item-first {
+.card-list__item-first {
   width: 270px;
   height: 98px;
 }
 
-.peculiarities-item-second {
+.card-list__item-second {
   width: 270px;
   height: 74px;
 }
 
-.peculiarities-item-third {
+.card-list__item-third {
   width: 270px;
   height: 74px;
 }
 
-.peculiarities-item-fourth {
+.card-list__item-fourth {
   width: 270px;
   height: 98px;
 }
 
-.peculiarities-icon {
+.card-list__icon {
   background-color: #f5f4fa;
   border-radius: 4px;
   display: flex;
